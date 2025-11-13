@@ -1,0 +1,24 @@
+<!-- Ninna - Option D: Geometric Monogram -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-labelledby="D_title D_desc">
+  <title id="D_title">Ninna — Monograma Geométrico</title>
+  <desc id="D_desc">Monograma minimal com 3 traços (estilo Spotify) formando tridente embutido em um C geométrico.</desc>
+  <defs>
+    <linearGradient id="gD" x1="0" x2="1">
+      <stop offset="0" stop-color="#7b3cff"/>
+      <stop offset="1" stop-color="#ff6b9a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- base círculo -->
+  <circle cx="300" cy="300" r="280" fill="url(#gD)"/>
+
+  <!-- C estilizado (monoline) -->
+  <path d="M200 380 C230 200 420 180 480 300" fill="none" stroke="#fff" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- três riscos tridente (subliminar dentro do C) -->
+  <g transform="translate(340,170)">
+    <rect x="-26" y="20" width="12" height="80" rx="6" fill="#fff" opacity="0.95"/>
+    <rect x="0" y="0" width="12" height="100" rx="6" fill="#fff" opacity="0.95"/>
+    <rect x="26" y="20" width="12" height="80" rx="6" fill="#fff" opacity="0.95"/>
+  </g>
+</svg>

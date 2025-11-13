@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/ninnabg.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="page-title">Ninna - Your virtual child with Artificial Intelligence</title>
+    <meta name="description" content="Talk, teach and create bonds with a virtual child that learns and grows with you! The most realistic virtual parenting experience." />
+    <meta name="keywords" content="artificial intelligence, virtual child, virtual son, AI, chat, family, parenthood" />
+    <meta property="og:title" content="Ninna - Your virtual child with AI" />
+    <meta property="og:description" content="The most realistic experience of having a virtual child that learns and grows with you!" />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VDB1B0Z4EZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VDB1B0Z4EZ');
+</script>
+
+<script>
+  // Dynamic title based on language
+  function updatePageTitle() {
+    const userLang = navigator.language || navigator.languages[0] || 'en';
+    const lang = userLang.toLowerCase();
+    
+    const titles = {
+      'pt': 'Ninna - Seu filho virtual com Inteligência Artificial',
+      'pt-br': 'Ninna - Seu filho virtual com Inteligência Artificial',
+      'es': 'Ninna - Tu hijo virtual con Inteligencia Artificial',
+      'fr': 'Ninna - Votre enfant virtuel avec Intelligence Artificielle',
+      'de': 'Ninna - Ihr virtuelles Kind mit Künstlicher Intelligenz',
+      'it': 'Ninna - Il tuo bambino virtuale con Intelligenza Artificiale',
+      'zh': 'Ninna - 您的人工智能虚拟孩子',
+      'ja': 'Ninna - 人工知能を持つバーチャル子供',
+      'ru': 'Ninna - Ваш виртуальный ребёнок с Искусственным Интеллектом',
+      'ko': 'Ninna - 인공지능을 가진 가상 아이',
+      'hi': 'Ninna - आर्टिफिशियल इंटेलिजेंस के साथ आपका वर्चुअल बच्चा',
+      'ar': 'Ninna - طفلك الافتراضي مع الذكاء الاصطناعي'
+    };
+    
+    // Default to English if language not found
+    const title = titles[lang] || titles[lang.split('-')[0]] || 'Ninna - Your virtual child with Artificial Intelligence';
+    document.title = title;
+    document.getElementById('page-title').textContent = title;
+  }
+  
+  // Update title on load
+  document.addEventListener('DOMContentLoaded', updatePageTitle);
+</script>
+    
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
